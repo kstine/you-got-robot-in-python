@@ -1,0 +1,33 @@
+Intro (Hi, I'm back)
+
+    The intent of this presentation is a little bit of practical creativity.
+
+Framing:
+    This is meant for the beginner to intermediate Robot Framework user.
+    Maybe someone who has written a few python based RF libraries.
+    For more advanced users this could get you thinking in a different mindset.
+
+Quick Demo - 'Get Length' Keyword
+
+Use cases:
+    Using RF libraries in python scripts as utilites.
+    Leveraging RF within tools that are python only - locust.io
+
+Story Time - locust.io and RF
+
+Examine how to use:
+- Standard libraries- BuiltIn, etc...
+- 3rd Party- JSONLibrary (ng-jsonpath)
+- Libraries that rely on instances- Requests
+
+Dangerous Keywords
+    Keywords that rely on RF to be 'running'
+    Maybe not worth mocking RF to leverage those KW
+
+Demo- Bigger Demo
+
+Advantages:
+- Speed?
+- Python syntax?
+- Fold back into RF Library
+

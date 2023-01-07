@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "you-got-robot-in-python"
+version = "0.1.0"
+description = "You got Robot Framework in my Python"
+authors = ["Kelby Stine <kelbystine@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.10"
+robotframework = "^6.0.1"
+PyYAML = "^6.0"
+robotframework-faker = "^5.0.0"
+robotframework-jsonlibrary = "^0.5"
+robotframework-requests = "^0.9.4"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.1"
+flake8 = "^6.0.0"
+pylint = "^2.15.9"
+robotframework-robocop = "^2.6.0"
+robotframework-tidy = "^3.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
