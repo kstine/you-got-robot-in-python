@@ -1,7 +1,7 @@
 """
-Import from example
+from <rf_lib> import <class> as <xyz> example
 
-python Examples/Importing/from_import.py
+python Examples/Importing/02__from_import.py
 """
 
 import constants as C

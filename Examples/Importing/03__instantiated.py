@@ -1,12 +1,12 @@
 """
-Inheriting a library
+Create an instance of a library to be used withn a class.
 
-python Examples/Importing/instantiated.py
+python Examples/Importing/03__instantiated.py
 """
 
 import constants as C
 from robot.libraries.BuiltIn import BuiltIn
-from robot.libraries.Collections import Collections as collecions
+from robot.libraries.Collections import Collections
 
 
 class UberBuiltIn():  # pylint: disable=too-many-ancestors
@@ -38,7 +38,7 @@ class UberBuiltIn():  # pylint: disable=too-many-ancestors
         Some fun with collections
         """
         self.rf_builtin.log_to_console(
-            collecions().get_from_dictionary(
+            Collections().get_from_dictionary(
                 C.DICT_VAR,
                 "gnomes",
                 default="awesome!"

@@ -2,7 +2,7 @@ Intro (Hi, I'm back)
 
     The intent of this presentation is a little bit of practical creativity.
 
-Framing:
+Scope:
     This is meant for the beginner to intermediate Robot Framework user.
     Maybe someone who has written a few python based RF libraries.
     For more advanced users this could get you thinking in a different mindset.
@@ -14,6 +14,11 @@ Use cases:
     Leveraging RF within tools that are python only - locust.io
 
 Story Time - locust.io and RF
+
+Dependencies:
+- hopefully part of a larger project
+- Do not install RF just to get the libraries (but maybe)
+- Some 3rd party libs have minimal required Dependencies
 
 Examine how to use:
 - Standard libraries- BuiltIn, etc...

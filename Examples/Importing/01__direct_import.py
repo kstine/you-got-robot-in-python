@@ -1,7 +1,7 @@
 """
-Direct import example
+import <rf_lib> as <xyz> example
 
-python Examples/Importing/direct_import.py
+python Examples/Importing/01__direct_import.py
 """
 
 import constants as C

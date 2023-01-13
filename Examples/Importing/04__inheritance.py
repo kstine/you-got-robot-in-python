@@ -1,7 +1,7 @@
 """
-Inheriting a library
+Inheriting a library (firehose inheritance)
 
-python Examples/Importing/inheritance.py
+python Examples/Importing/04__inheritance.py
 """
 
 import constants as C

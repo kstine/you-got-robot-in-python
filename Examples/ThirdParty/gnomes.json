@@ -1,0 +1,50 @@
+[
+    {
+        "gnomes": [
+            {
+                "gnome": true,
+                "name": "Bob",
+                "favorite_color": "blue",
+                "hobbies": [
+                    "music",
+                    "testing"
+                ]
+            },
+            {
+                "gnome": true,
+                "name": "Sieglund",
+                "favorite_color": "yellow",
+                "hobbies": [
+                    "dancing",
+                    "software engineer"
+                ]
+            },
+            {
+                "gnome": true,
+                "name": "Shmebulock",
+                "favorite_color": "all",
+                "hobbies": [
+                    "rainbow hunting"
+                ]
+            },
+            {
+                "gnome": true,
+                "name": "Gary",
+                "favorite_color": "blue",
+                "hobbies": [
+                    "baking",
+                    "testing"
+                ]
+            },
+            {
+                "gnome": false,
+                "name": "Troll",
+                "favorite_color": "grey",
+                "hobbies": [
+                    "bowling",
+                    "eating gnomes"
+                ]
+            }
+        ]
+    }
+]
