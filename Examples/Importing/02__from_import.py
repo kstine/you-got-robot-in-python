@@ -5,23 +5,22 @@ python Examples/Importing/02__from_import.py
 """
 
 import constants as C
-from robot.libraries.BuiltIn import BuiltIn as rf_builtin
+from robot.libraries.BuiltIn import BuiltIn
 
 
 def main():
     """
-    from import probably the best option
+    'from import' is a good option
     """
 
-    rf_builtin().log_to_console(rf_builtin().get_length(C.STRING_VAR))
-    rf_builtin().log_to_console(rf_builtin().get_length(C.LIST_VAR))
-    rf_builtin().log_to_console(rf_builtin().get_length(C.DICT_VAR))
+    BuiltIn().log_to_console(BuiltIn().get_length(C.STRING_VAR))
+    BuiltIn().log_to_console(BuiltIn().get_length(C.LIST_VAR))
+    BuiltIn().log_to_console(BuiltIn().get_length(C.DICT_VAR))
     try:
-        rf_builtin().log_to_console(
-            rf_builtin().get_length(C.NON_VAR)
-        )
+        BuiltIn().log_to_console(
+            BuiltIn().get_length(C.NON_VAR))
     except RuntimeError as error:
-        rf_builtin().log_to_console(error)
+        BuiltIn().log_to_console(error)
 
 
 if __name__ == "__main__":

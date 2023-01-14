@@ -1,5 +1,6 @@
 *** Comments ***
 Don't forget to run docker container...
+docker start gnomocon
 robot -d Results -L TRACE DemoTests/HttpBinTests.robot
 
 

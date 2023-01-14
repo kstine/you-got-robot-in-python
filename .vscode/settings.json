@@ -1,5 +1,5 @@
 {
-    "editor.rulers" : [120],
+    "editor.rulers" : [80],
     "editor.codeActionsOnSave": {"source.fixAll.pylint": true, "source.organizeImports": true},
     "files.trimTrailingWhitespace": true,
     "python.envFile": "${workspaceFolder}/.env",

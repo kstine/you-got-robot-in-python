@@ -9,9 +9,9 @@ from robot.libraries.BuiltIn import BuiltIn
 from robot.libraries.Collections import Collections
 
 
-class UberBuiltIn():  # pylint: disable=too-many-ancestors
+class ClassyBuiltIn():
     """
-    Inheriting a robot framework library not advised
+    Create an instance with __init__
     """
 
     def __init__(self):
@@ -47,6 +47,6 @@ class UberBuiltIn():  # pylint: disable=too-many-ancestors
 
 
 if __name__ == "__main__":
-    uber_built = UberBuiltIn()
+    uber_built = ClassyBuiltIn()
     uber_built.main()
     uber_built.other_main()

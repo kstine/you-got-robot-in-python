@@ -1,6 +1,10 @@
 """
 Example of using JSONLibrary in a script
 
+Note that while jsonlibrary is excellent at manipulating json objects,
+it lacks the ability to 'pretty print'
+
+
 python Examples/ThirdParty/json_library_example.py
 """
 # import logging
@@ -74,7 +78,7 @@ class JsonLibraryExample():
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG,
-                        filename="Results/json_lib.log",
+                        filename="Examples/ThirdParty/json_lib.log",
                         filemode="w")
 
     json_lib = JsonLibraryExample()

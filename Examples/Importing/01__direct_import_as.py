@@ -1,7 +1,7 @@
 """
 import <rf_lib> as <xyz> example
 
-python Examples/Importing/01__direct_import.py
+python Examples/Importing/01__direct_import_as.py
 """
 
 import constants as C
@@ -10,7 +10,8 @@ import robot.libraries.BuiltIn as rf_builtin
 
 def main():
     """
-    direct import can be cumbersome
+    direct import can be cumbersome,
+    but better if using 'as'
     """
 
     rf_builtin.BuiltIn().log_to_console(
