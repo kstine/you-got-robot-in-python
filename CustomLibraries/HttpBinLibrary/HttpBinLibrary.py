@@ -8,8 +8,7 @@ from typing import Union
 
 from RequestsLibrary import RequestsLibrary
 from robot.api.deco import keyword, library, not_keyword
-from robot.libraries.BuiltIn import BuiltIn as rf_builtin
-from robot.libraries.BuiltIn import RobotNotRunningError
+from robot.libraries.BuiltIn import BuiltIn, RobotNotRunningError
 
 
 @library(scope="GLOBAL", version="1.0", auto_keywords=True)
@@ -17,6 +16,8 @@ class HttpBinLibrary():
     """
     This is a library and a script.
     """
+
+    rf_builtin = BuiltIn()
 
     def __init__(self,
                  host: str = "http://localhost:8086",
@@ -76,7 +77,7 @@ class HttpBinLibrary():
     @not_keyword
     def _get_requests_library_instance(self) -> RequestsLibrary:
         try:
-            rf_requests = rf_builtin().get_library_instance(
+            rf_requests = self.rf_builtin.get_library_instance(
                 "RequestsLibrary")
         except (RobotNotRunningError, RuntimeError):
             rf_requests = RequestsLibrary()
@@ -85,13 +86,15 @@ class HttpBinLibrary():
 
 if __name__ == "__main__":
 
-    rf_builtin().log_to_console("*** Results ***")
     http_bin = HttpBinLibrary()
+    http_bin.rf_builtin.log_to_console("*** Results ***\n")
 
     http_bin.create_http_bin_session()
 
     get_resp = http_bin.get_http_method()
-    rf_builtin().log_to_console(get_resp.headers)
+    http_bin.rf_builtin.log_to_console(
+        "*** Headers ***\n" + str(get_resp.headers))
 
     data_response = http_bin.post_dynamic_data("2")
-    rf_builtin().log_to_console(data_response.json())
+    http_bin.rf_builtin.log_to_console(
+        "*** Dynamic Data ***\n" + str(data_response.json()))
