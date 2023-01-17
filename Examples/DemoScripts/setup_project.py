@@ -1,8 +1,8 @@
 """
 Final demo
 Show how Dialogs, Builtin, and OperatingSystem can be used
-Further demonstrate some struvtures not directly supported by Robot Framework
-such as Enums, Match/Case
+Further demonstrate some struvtures not directly supported
+by Robot Framework such as Enums, Match/Case
 """
 from enum import Enum
 from typing import Tuple
