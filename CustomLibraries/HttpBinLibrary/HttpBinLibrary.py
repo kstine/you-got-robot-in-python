@@ -43,10 +43,11 @@ class HttpBinLibrary():
         """
         Gets the response from http bin service
 
-        Returns:
+        Returns
             any: response
         """
-        response = self.rf_requests.get_on_session(self.alias, "/get")
+        response = self.rf_requests.get_on_session(
+            self.alias, "/get")
         return response
 
     @keyword("Post Dynamic Data")
