@@ -37,5 +37,5 @@ Verify Post Dynamic Data Contains Url
 Verify Alias
     [Documentation]    Verify that session created by other library exists
     ${expected_alias}    HttpBinLibrary.Get HTTP Bin Alias
-    ${is_alias}  RequestsLibrary.Session Exists    ${expected_alias}
+    ${is_alias}    RequestsLibrary.Session Exists    ${expected_alias}
     Should Be True    ${is_alias}
